@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AI Universe hub</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="tailwind.config.js">
+</head>
+
+<body>
+    <header class="text-center">
+        <h1 class="text-4xl font-bold  mt-10 mb-4">AI Universe Hub</h1>
+        <button class="bg-[#EB5757] py-[13px] text-white font-semibold px-4 rounded-xl">Sort By Date</button>
+    </header>
+    <section class="my-10 container mx-auto">
+        <div id="loading-spinner" class="text-center my-5">
+            <span class="loading loading-spinner text-primary"></span>
+            <span class="loading loading-spinner text-secondary"></span>
+            <span class="loading loading-spinner text-accent"></span>
+            <span class="loading loading-spinner text-neutral"></span>
+            <span class="loading loading-spinner text-info"></span>
+            <span class="loading loading-spinner text-success"></span>
+            <span class="loading loading-spinner text-warning"></span>
+            <span class="loading loading-spinner text-error"></span>
+        </div>
+        <div id="main-div-container" class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        </div>
+        <div id="btn-show-data" class="text-center ">
+            <button onclick="handleShowBtn()"
+                class="text-white bg-[#EB5757] py-3 px-6 font-semibold rounded-[16px] my-10 ">See More</button>
+        </div>
+
+        <div>
+            <!-- modal -->
+            <!-- You can open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+            <dialog id="my_modal_3" >
+                
+            </dialog>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
